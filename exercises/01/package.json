@@ -1,0 +1,28 @@
+{
+  "name": "01",
+  "version": "1.0.0",
+  "description": "```bash cd exercises/01 npm install npm run dev ```",
+  "main": "index.js",
+  "dependencies": {
+    "esbuild": "^0.25.10",
+    "fdir": "^6.5.0",
+    "nanoid": "^3.3.11",
+    "picocolors": "^1.1.1",
+    "picomatch": "^4.0.3",
+    "postcss": "^8.5.6",
+    "rollup": "^4.52.3",
+    "source-map-js": "^1.2.1",
+    "tinyglobby": "^0.2.15"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^7.1.7"
+  }
+}
