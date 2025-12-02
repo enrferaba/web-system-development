@@ -1,0 +1,11 @@
+{
+  "name": "05",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
