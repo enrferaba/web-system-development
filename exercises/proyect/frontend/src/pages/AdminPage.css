@@ -1,0 +1,164 @@
+/* Contenedor general */
+.admin-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 40px 60px;
+}
+
+/* Título principal */
+.admin-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* Dos columnas: formulario + lista */
+.admin-grid {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* Tarjetas */
+.admin-card {
+  background: rgba(15, 15, 25, 0.95);
+  border-radius: 16px;
+  padding: 20px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* Formulario ocupa algo más de ancho */
+.admin-form {
+  flex: 1.1;
+}
+
+/* Lista un poco más estrecha */
+.admin-list-card {
+  flex: 0.9;
+}
+
+.admin-card-title {
+  font-size: 1.3rem;
+  margin-bottom: 14px;
+}
+
+/* Campos del formulario */
+.admin-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.admin-label {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* Inputs alineados y del mismo ancho */
+.admin-input,
+.admin-textarea {
+  width: 100%;
+  padding: 0.55rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+  color: #ffffff;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.admin-input:focus,
+.admin-textarea:focus {
+  border-color: #ff8800;
+}
+
+/* Botones formulario */
+.admin-actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Estilos de botones (parecido al resto de la app) */
+.admin-btn {
+  padding: 0.45rem 0.95rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.admin-btn.primary {
+  background: #ff8800;
+  color: #000;
+  font-weight: 600;
+}
+
+.admin-btn.ghost {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.admin-btn.danger {
+  background: #ff4b4b;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Lista de coches */
+.admin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.admin-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 0.75rem 0.9rem;
+  border-radius: 10px;
+  background: rgba(30, 30, 42, 0.95);
+}
+
+.admin-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.admin-item-meta {
+  font-size: 0.82rem;
+  opacity: 0.8;
+}
+
+.admin-item-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.admin-empty {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+/* Responsive: en pantallas pequeñas, pila vertical */
+@media (max-width: 900px) {
+  .admin-wrapper {
+    padding-inline: 16px;
+  }
+
+  .admin-grid {
+    flex-direction: column;
+  }
+}

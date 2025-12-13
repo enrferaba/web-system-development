@@ -1,0 +1,90 @@
+/* === Filters Panel Styles === */
+
+.filters-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.5rem;
+  background: rgba(20, 20, 20, 0.6);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  width: 260px;
+}
+
+.filters-panel h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.label {
+  margin-bottom: 0.4rem;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.05);
+  color: white;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #ff8800;
+}
+
+/* Eliminar flechas ↑ ↓ en inputs number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* Row para inputs */
+.filters-row {
+  display: flex;
+  gap: 0.7rem;
+}
+
+/* Chips para combustible */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chips .btn {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+/* Toggle de puertas */
+.door-toggle {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+
+.door-toggle button {
+  flex: 1;
+  padding: 0.5rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.door-toggle button.active {
+  background: #ff8800;
+  border-color: #ff8800;
+  color: black;
+  font-weight: 600;
+}
